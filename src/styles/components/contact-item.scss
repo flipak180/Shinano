@@ -1,0 +1,27 @@
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    margin-bottom: 24px;
+
+    &__icon {
+        flex: 0 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    path {
+        stroke: $blue;
+    }
+
+    a {
+        color: $black;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

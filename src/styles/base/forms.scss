@@ -1,0 +1,81 @@
+.form {
+
+    &__text {
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    &__row {
+        margin-bottom: 25px;
+    }
+
+    input, textarea {
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        line-height: 150%;
+        border: none;
+        padding: 18px 20px;
+        width: 100%;
+
+        ::placeholder {
+            color: rgba($blue, 0.6);
+        }
+    }
+
+    textarea {
+        height: 240px;
+    }
+
+    .checkbox {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            width: auto;
+        }
+
+        input + label {
+            user-select: none;
+            margin: 0;
+            font-size: 14px;
+            line-height: 150%;
+            color: rgba($black, 0.4);
+            padding-left: 40px;
+            position: relative;
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                margin-top: 5px;
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                background-color: rgba(255, 255, 255, 0.6);
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        input:checked + label::before {
+            background-image: url(../images/icon-checkbox.svg);
+            background-color: $blue !important;
+        }
+    }
+    
+    button {
+        background-color: #fff;
+        color: $black;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

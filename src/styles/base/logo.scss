@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    img, svg {
+        width: 392px;
+        height: 64px;
+    }
+
+    &-contrast {
+
+        path {
+            fill: $blue;
+        }
+    }
+}

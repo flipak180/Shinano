@@ -1,0 +1,20 @@
+{
+    "name": "shinano",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build --base=/html/Shinano/",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@vituum/vite-plugin-posthtml": "^0.1.0",
+        "posthtml-include": "^1.7.4",
+        "vite": "^4.1.0"
+    },
+    "dependencies": {
+        "jquery": "^3.6.3",
+        "slick-carousel": "^1.8.1"
+    }
+}

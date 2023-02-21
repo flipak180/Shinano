@@ -1,0 +1,22 @@
+@import "./vendors/slick/slick";
+@import "./vendors/slick/slick-theme";
+
+@import "./base/variables";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/logo";
+@import "./base/buttons";
+@import "./base/forms";
+@import "./base/grid";
+
+@import "./components/header";
+@import "./components/section";
+@import "./components/footer";
+@import "./components/categories-list";
+@import "./components/images-slider";
+@import "./components/contacts-banner";
+@import "./components/contact-item";
+@import "./components/feedback-form";
+@import "./components/dropdown-menu";
+@import "./components/banner";
+@import "./components/burger-menu";

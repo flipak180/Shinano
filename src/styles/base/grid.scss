@@ -1,0 +1,16 @@
+.flex-row {
+    display: flex;
+    gap: 20px;
+
+    &.g-20 {
+        gap: 20px;
+    }
+
+    &.g-60 {
+        gap: 60px;
+    }
+
+    > * {
+        width: 100%;
+    }
+}

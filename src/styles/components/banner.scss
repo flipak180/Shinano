@@ -1,0 +1,35 @@
+.banner {
+    background-image: url(../images/banner-back.png);
+    background-size: cover;
+    color: #fff;
+    padding: 48px 90px;
+    grid-column: span 6;
+
+    &-size_s {
+        grid-column: span 4;
+    }
+
+    &-size_xs {
+        grid-column: span 2;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 38px;
+    }
+
+    &__title {
+        color: #fff;
+        margin-top: 0;
+    }
+
+    &__text {
+
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    .form .checkbox input + label {
+        color: #fff;
+    }
+}
