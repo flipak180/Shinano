@@ -19,7 +19,7 @@
         grid-row: 1 / 2;
         grid-column: 2 / 4;
         padding-right: 128px;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     &__right {
@@ -57,7 +57,6 @@
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 600;
-        font-size: 16px;
         color: $black;
         padding: 16px 12px;
         transition: all 0.2s;
@@ -81,7 +80,6 @@
         input {
             border: none;
             border-bottom: 1px solid $black;
-            font-size: 16px;
             line-height: 150%;
             padding: 5px 0;
             outline: none;
