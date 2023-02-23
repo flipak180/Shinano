@@ -66,6 +66,14 @@
             background-image: url(../images/icon-checkbox.svg);
             background-color: $blue !important;
         }
+
+        a {
+            color: rgba($black, 0.4);
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     
     button {

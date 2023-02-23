@@ -5,8 +5,13 @@
     src: local("Gotham Pro"), url("../fonts/GothamPro.woff2") format("woff2");
 }
 
-html {
+:root {
     box-sizing: border-box;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -14,11 +19,6 @@ html {
 
 .page {
     margin: 0;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    line-height: 150%;
-    color: $black;
 }
 
 .wrapper {
