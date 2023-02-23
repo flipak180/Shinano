@@ -99,6 +99,10 @@
         text-transform: uppercase;
         font-size: 28px;
 
+        @include container {
+            padding: 29px 20px;
+        }
+
         img {
             width: 50px;
             transition: all 0.2s;

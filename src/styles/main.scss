@@ -1,17 +1,20 @@
 @import "./vendors/slick/slick";
 @import "./vendors/slick/slick-theme";
 
-@import "./base/variables";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
 @import "./base/base";
 @import "./base/typography";
-@import "./base/logo";
 @import "./base/buttons";
 @import "./base/forms";
-@import "./base/grid";
 
-@import "./components/header";
-@import "./components/section";
-@import "./components/footer";
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/footer";
+@import "./layout/grid";
+
+@import "./components/logo";
 @import "./components/categories-list";
 @import "./components/images-slider";
 @import "./components/contacts-banner";
