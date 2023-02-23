@@ -7,6 +7,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 30px;
     }
 
     &__author {
@@ -27,6 +28,10 @@
         .footer__nav {
             column-count: 2;
             column-gap: 24px;
+
+            @include xxl {
+                column-count: 1;
+            }
         }
     }
 

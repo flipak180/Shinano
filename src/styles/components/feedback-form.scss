@@ -4,8 +4,16 @@
     background-position: left bottom;
     padding: 65px 85px;
 
+    @include xxl {
+        background-size: 40%, 100%;
+    }
+
     &__content {
         padding-left: 650px;
+
+        @include xxl {
+            padding-left: 500px;
+        }
     }
 
     &__title {

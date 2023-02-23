@@ -5,6 +5,10 @@
     padding: 48px 90px;
     grid-column: span 6;
 
+    @include xxl {
+        padding: 48px;
+    }
+
     &-size_s {
         grid-column: span 4;
     }

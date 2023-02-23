@@ -15,11 +15,16 @@
         color: #fff;
         display: flex;
         justify-content: space-between;
+        gap: 30px;
         margin-bottom: 16px;
         grid-row: 1 / 2;
         grid-column: 2 / 4;
         padding-right: 128px;
         font-size: 0.875rem;
+
+        @include xxl {
+            padding-right: 30px;
+        }
     }
 
     &__right {
@@ -47,6 +52,10 @@
         grid-row: 2 / 3;
         grid-column: 2 / 4;
         padding-right: 128px;
+
+        @include xxl {
+            padding-right: 30px;
+        }
     }
 
     &__nav-menu {
@@ -76,6 +85,10 @@
 
     &__search {
         position: relative;
+
+        @include container {
+            display: none;
+        }
 
         input {
             border: none;

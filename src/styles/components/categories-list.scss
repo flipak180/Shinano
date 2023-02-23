@@ -103,6 +103,10 @@
             padding: 29px 20px;
         }
 
+        @include xxl {
+            font-size: 1.5rem;
+        }
+
         img {
             width: 50px;
             transition: all 0.2s;
