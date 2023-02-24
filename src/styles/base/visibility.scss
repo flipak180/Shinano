@@ -20,6 +20,11 @@
         display: none;
     }
 }
+.visible-container {
+    @include container {
+        display: none;
+    }
+}
 
 .hidden-xs {
     display: none;
@@ -49,6 +54,13 @@
     display: none;
 
     @include xxl {
+        display: block;
+    }
+}
+.hidden-container {
+    display: none;
+
+    @include container {
         display: block;
     }
 }
