@@ -9,21 +9,28 @@ $(".categories-slider").each(function () {
         nextArrow: $(".categories-slider__arrow-next", el),
         responsive: [
             {
-                breakpoint: 1401,
+                breakpoint: 1400,
                 settings: {
                     slidesToShow: 3,
                 },
             },
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                 },
             },
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
                 },
             },
         ],

@@ -35,6 +35,11 @@
         display: flex;
         justify-content: space-between;
         gap: 96px;
+
+        @include xxl {
+            flex-direction: column;
+            gap: 50px;
+        }
     }
 
     &__column:nth-child(1) {

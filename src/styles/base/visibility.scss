@@ -2,65 +2,65 @@
 }
 .visible-sm {
     @include sm {
-        display: none;
+        display: none !important;
     }
 }
 .visible-md {
     @include md {
-        display: none;
+        display: none !important;
     }
 }
 .visible-xl {
     @include xl {
-        display: none;
+        display: none !important;
     }
 }
 .visible-xxl {
     @include xxl {
-        display: none;
+        display: none !important;
     }
 }
 .visible-container {
     @include container {
-        display: none;
+        display: none !important;
     }
 }
 
 .hidden-xs {
-    display: none;
+    display: none !important;
 }
 .hidden-sm {
-    display: none;
+    display: none !important;
 
     @include sm {
-        display: block;
+        display: block !important;
     }
 }
 .hidden-md {
-    display: none;
+    display: none !important;
 
     @include md {
-        display: block;
+        display: block !important;
     }
 }
 .hidden-xl {
-    display: none;
+    display: none !important;
 
     @include xl {
-        display: block;
+        display: block !important;
     }
 }
 .hidden-xxl {
-    display: none;
+    display: none !important;
 
     @include xxl {
-        display: block;
+        display: block !important;
     }
 }
 .hidden-container {
-    display: none;
+    display: none !important;
 
     @include container {
-        display: block;
+        display: block !important;
     }
 }

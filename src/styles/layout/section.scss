@@ -44,7 +44,7 @@
         padding-bottom: calc(128px + 130px);
 
         @include xl {
-            padding-bottom: 0;
+            padding-bottom: 64px;
         }
 
         &:after {
@@ -58,5 +58,15 @@
         margin: 0 0 48px;
         padding: 0 0 10px;
         border-bottom: 2px solid #1a499a;
+
+        @include xl {
+            display: inline-block;
+            padding-right: 150px;
+            width: auto;
+        }
+
+        @include lg {
+            padding-right: 0;
+        }
     }
 }

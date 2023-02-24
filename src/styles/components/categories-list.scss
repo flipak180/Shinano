@@ -5,6 +5,14 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+
+    @include xl {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .categories-slider {
@@ -36,6 +44,10 @@
         display: flex;
         align-items: center;
         gap: 40px;
+
+        @include md {
+            display: none;
+        }
     }
 
     &__arrow-prev,
