@@ -1,18 +1,27 @@
 .feedback-form {
-    background: url(../images/bg-feedback-form.png), linear-gradient(252.19deg, rgba(30, 38, 49, 0.2) 0%, rgba(163, 182, 215, 0) 91.3%), #E6EFF8;;
+    background: url(../images/bg-feedback-form.png), linear-gradient(252.19deg, rgba(30, 38, 49, 0.2) 0%, rgba(163, 182, 215, 0) 91.3%), #E6EFF8;
     background-repeat: no-repeat;
     background-position: left bottom;
     padding: 65px 85px;
 
+    @include container {
+        background-size: 35%, 100%;
+        padding: 65px;
+    }
+
     @include xxl {
-        background-size: 40%, 100%;
+        background: linear-gradient(252.19deg, rgba(30, 38, 49, 0.2) 0%, rgba(163, 182, 215, 0) 91.3%), #E6EFF8;
     }
 
     &__content {
         padding-left: 650px;
 
+        @include container {
+            padding-left: 400px;
+        }
+
         @include xxl {
-            padding-left: 500px;
+            padding-left: 0;
         }
     }
 

@@ -1,0 +1,54 @@
+.visible-xs {
+}
+.visible-sm {
+    @include sm {
+        display: none;
+    }
+}
+.visible-md {
+    @include md {
+        display: none;
+    }
+}
+.visible-xl {
+    @include xl {
+        display: none;
+    }
+}
+.visible-xxl {
+    @include xxl {
+        display: none;
+    }
+}
+
+.hidden-xs {
+    display: none;
+}
+.hidden-sm {
+    display: none;
+
+    @include sm {
+        display: block;
+    }
+}
+.hidden-md {
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+.hidden-xl {
+    display: none;
+
+    @include xl {
+        display: block;
+    }
+}
+.hidden-xxl {
+    display: none;
+
+    @include xxl {
+        display: block;
+    }
+}

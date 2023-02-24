@@ -1,23 +1,15 @@
-.banner {
+.consult-form__grid-item {
+    grid-column: span 4;
+}
+
+.consult-form {
     background-image: url(../images/banner-back.png);
     background-size: cover;
     color: #fff;
     padding: 48px 90px;
-    grid-column: span 6;
 
     @include xxl {
         padding: 48px;
-    }
-
-    &-size_s {
-        grid-column: span 4;
-    }
-
-    &-size_xs {
-        grid-column: span 2;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 38px;
     }
 
     &__title {

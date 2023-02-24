@@ -1,4 +1,5 @@
 .section {
+    padding-top: 64px;
     padding-bottom: 128px;
 
     &_bg, &_bg-lines {
@@ -8,15 +9,23 @@
             background: url(../images/wave.svg);
             width: 100%;
             height: 229px;
+
+            @include xl {
+                display: none;
+            }
         }
     }
 
     &_bg {
         background: #e6eff8;
         background: linear-gradient(94.26deg, rgba(30, 38, 49, 0.2) 4.07%, rgba(163, 182, 215, 0) 75.34%), #e6eff8;
-        padding-top: 70px;
+        padding-top: calc(64px + 70px);
         position: relative;
         margin-top: -70px;
+
+        @include xl {
+            margin-top: 0;
+        }
 
         &:after {
             top: -1px;
@@ -32,11 +41,14 @@
         background-image: url("../images/background-lines.png"),
         linear-gradient(274.26deg, rgba(30, 38, 49, 0.2) 4.07%, rgba(163, 182, 215, 0) 75.34%);
         position: relative;
-        padding-top: 0;
         padding-bottom: calc(128px + 130px);
 
+        @include xl {
+            padding-bottom: 0;
+        }
+
         &:after {
-            bottom: 0;
+            bottom: -1px;
         }
     }
 
@@ -44,7 +56,7 @@
         max-width: 832px;
         width: 100%;
         margin: 0 0 48px;
-        padding: 64px 0 10px;
+        padding: 0 0 10px;
         border-bottom: 2px solid #1a499a;
     }
 }
