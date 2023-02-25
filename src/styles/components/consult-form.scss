@@ -12,6 +12,14 @@
         padding: 48px;
     }
 
+    .flex-row {
+        gap: 60px;
+
+        @include lg {
+            gap: 0;
+        }
+    }
+
     &__title {
         color: #fff;
         margin-top: 0;
