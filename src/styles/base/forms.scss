@@ -47,6 +47,12 @@
             position: relative;
             cursor: pointer;
 
+            @include lg {
+                & {
+                    color: $black;
+                }
+            }
+
             &:before {
                 content: '';
                 margin-top: 5px;
@@ -68,6 +74,12 @@
 
         a {
             color: rgba($black, 0.4);
+
+            @include lg {
+                & {
+                    color: $black;
+                }
+            }
 
             &:hover {
                 text-decoration: none;

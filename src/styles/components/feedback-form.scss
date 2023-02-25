@@ -1,16 +1,38 @@
 .feedback-form {
-    background: url(../images/bg-feedback-form.png), linear-gradient(252.19deg, rgba(30, 38, 49, 0.2) 0%, rgba(163, 182, 215, 0) 91.3%), #E6EFF8;
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    background: linear-gradient(252.19deg, rgba(30, 38, 49, 0.2) 0%, rgba(163, 182, 215, 0) 91.3%), #E6EFF8;
     padding: 65px 85px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url(../images/bg-feedback-form.png) no-repeat left bottom;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
 
     @include container {
-        background-size: 35%, 100%;
         padding: 65px;
+
+        &:before {
+            opacity: 0.4;
+            background-size: 600px;
+        }
     }
 
     @include xxl {
-        background: linear-gradient(252.19deg, rgba(30, 38, 49, 0.2) 0%, rgba(163, 182, 215, 0) 91.3%), #E6EFF8;
+        &:before {
+            background-position: right bottom;
+            background-size: 400px;
+        }
+    }
+
+    @include lg {
+        padding: 25px;
     }
 
     &__content {
