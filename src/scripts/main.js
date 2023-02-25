@@ -63,3 +63,6 @@ $('.header__nav-catalog-link').click(function() {
     return false;
 });
 
+$('.footer__subtitle').click(function() {
+    $(this).parent().toggleClass('open');
+});

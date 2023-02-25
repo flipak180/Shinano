@@ -2,37 +2,44 @@
     <div class="container">
         <div class="footer__logo">
             <a class="logo" href="#">
-                <include src="./blocks/logo.html"></include>
+                <img src="./images/logo.svg" alt="Shinano">
             </a>
-            <p class="footer__author">2023 © Shinano</p>
+            <p class="footer__author visible-xxl">2023 © Shinano</p>
         </div>
         <div class="footer__columns">
             <div class="footer__column">
                 <h4 class="footer__subtitle">Каталог</h4>
-                <nav class="footer__nav">
-                    <a class="footer__link" href="#">Пневмогайковерты</a>
-                    <a class="footer__link" href="#">Пневмошуруповерты</a>
-                    <a class="footer__link" href="#">Пневмодрели</a>
-                    <a class="footer__link" href="#">Пневмо-полировальные машинки</a>
-                    <a class="footer__link" href="#">Пневматические шлифовальные машинки</a>
-                    <a class="footer__link" href="#">Пневматические шлифовальные машинки</a>
-                    <a class="footer__link" href="#">Зачистные ударные молотки</a>
-                    <a class="footer__link" href="#">Отрезной пневмоинструмент</a>
-                    <a class="footer__link" href="#">Зачистные ударные молотки</a>
-                </nav>
+                <div class="footer__column-content">
+                    <nav class="footer__nav">
+                        <a class="footer__link" href="#">Пневмогайковерты</a>
+                        <a class="footer__link" href="#">Пневмошуруповерты</a>
+                        <a class="footer__link" href="#">Пневмодрели</a>
+                        <a class="footer__link" href="#">Пневмо-полировальные машинки</a>
+                        <a class="footer__link" href="#">Пневматические шлифовальные машинки</a>
+                        <a class="footer__link" href="#">Пневматические шлифовальные машинки</a>
+                        <a class="footer__link" href="#">Зачистные ударные молотки</a>
+                        <a class="footer__link" href="#">Отрезной пневмоинструмент</a>
+                        <a class="footer__link" href="#">Зачистные ударные молотки</a>
+                    </nav>
+                </div>
             </div>
             <div class="footer__column">
                 <h4 class="footer__subtitle">Информация</h4>
-                <nav class="footer__nav">
-                    <a class="footer__link" href="#">Доставка и оплата</a>
-                    <a class="footer__link" href="#">О компании</a>
-                    <a class="footer__link" href="#">Контакты</a>
-                </nav>
+                <div class="footer__column-content">
+                    <nav class="footer__nav">
+                        <a class="footer__link" href="#">Доставка и оплата</a>
+                        <a class="footer__link" href="#">О компании</a>
+                        <a class="footer__link" href="#">Контакты</a>
+                    </nav>
+                </div>
             </div>
             <div class="footer__column">
                 <h4 class="footer__subtitle">Контакты</h4>
-                <include src="./blocks/contact-items.html"></include>
+                <div class="footer__column-content">
+                    <include src="./blocks/contact-items.html"></include>
+                </div>
             </div>
         </div>
+        <p class="footer__author hidden-xxl">2023 © Shinano</p>
     </div>
 </footer>
