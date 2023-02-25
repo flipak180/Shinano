@@ -4,6 +4,10 @@
     gap: 12px;
     margin-bottom: 24px;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &__icon {
         flex: 0 0 24px;
         display: flex;

@@ -5,9 +5,29 @@
     top: 236px;
     left: 64px;
     background-color: #fff;
-    box-shadow: 0px 4px 20px rgba(26, 73, 154, 0.2);
+    box-shadow: 0 4px 20px rgba(26, 73, 154, 0.2);
 
     .logo {
         margin-bottom: 48px;
+    }
+
+    @include container {
+        padding: 25px;
+        top: 310px;
+
+        .logo {
+            margin-bottom: 25px;
+            max-width: 300px;
+        }
+    }
+
+    @include xl {
+        &__contacts {
+            margin-top: 25px;
+
+            .contact-item {
+                margin-bottom: 12px;
+            }
+        }
     }
 }
