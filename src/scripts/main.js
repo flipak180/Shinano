@@ -60,3 +60,8 @@ $('.header__nav-catalog-link').click(function() {
 $('.footer__subtitle').click(function() {
     $(this).parent().toggleClass('open');
 });
+
+
+$('.toggle-search').click(function() {
+    $('.header__search').toggleClass('visible');
+});

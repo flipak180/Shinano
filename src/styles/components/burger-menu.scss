@@ -80,6 +80,10 @@
 .burger-menu .icon-right:before,
 .burger-menu .icon-right:after {
     background-color: $black;
+
+    @include sm {
+        background-color: #fff;
+    }
 }
 
 .header__nav-catalog-link:hover .burger-menu .icon-left,
