@@ -36,10 +36,6 @@
         position: relative;
         margin-top: -70px;
 
-        @include xl {
-            //margin-top: 0;
-        }
-
         @include sm {
             padding-top: 90px;
         }
@@ -60,11 +56,23 @@
         padding-bottom: calc(128px + 130px);
 
         @include xl {
-            //padding-bottom: 64px;
+            margin-bottom: -75px;
+        }
+
+        @include lg {
+            padding-bottom: calc(128px + 90px);
+        }
+
+        @include sm {
+            padding-bottom: 128px;
         }
 
         &:after {
             bottom: -1px;
+
+            @include sm {
+                left: -112px;
+            }
         }
     }
 
