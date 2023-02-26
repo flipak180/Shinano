@@ -52,10 +52,11 @@
 
     .category-item__text {
         font-size: 1.25rem;
-        line-height: 0.75rem;
+        padding: 25px 20px;
 
         @include xl {
             font-size: 0.5rem;
+            line-height: 0.75rem;
             padding: 5px;
 
             i {
