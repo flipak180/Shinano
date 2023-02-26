@@ -15,6 +15,14 @@
     }
 }
 
+.section_categories-slider {
+    @include xl {
+        .container {
+            max-width: 100%;
+        }
+    }
+}
+
 .categories-slider {
     position: relative;
 
@@ -32,8 +40,30 @@
         margin: 0 -20px;
     }
 
+    @include xl {
+        .slick-slide {
+            margin: 0 8px;
+        }
+
+        .slick-list {
+            margin: 0 -8px;
+        }
+    }
+
     .category-item__text {
         font-size: 1.25rem;
+        line-height: 0.75rem;
+
+        @include xl {
+            font-size: 0.5rem;
+            padding: 5px;
+
+            i {
+                background-image: url(../images/icon-arrow3.svg);
+                width: 14px;
+                height: 6px;
+            }
+        }
     }
 
     &__arrows {
@@ -45,7 +75,7 @@
         align-items: center;
         gap: 40px;
 
-        @include md {
+        @include xl {
             display: none;
         }
     }
@@ -57,10 +87,6 @@
         background-image: url(../images/icon-arrow.svg);
         cursor: pointer;
         transition: all 0.2s;
-
-        @include lg {
-            background-image: url(../images/icon-arrow3.svg);
-        }
 
         &:hover {
             opacity: 0.5;

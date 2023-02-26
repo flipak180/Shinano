@@ -3,7 +3,13 @@
     padding-bottom: 128px;
 
     @include xl {
+        padding-top: 48px;
         padding-bottom: 48px;
+    }
+
+    @include sm {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     &_bg, &_bg-lines {
@@ -71,7 +77,7 @@
             bottom: -1px;
 
             @include sm {
-                left: -112px;
+                left: -75px;
             }
         }
     }
@@ -82,5 +88,9 @@
         margin: 0 0 48px;
         padding: 0 0 10px;
         border-bottom: 2px solid #1a499a;
+
+        @include sm {
+            margin: 0 0 16px;
+        }
     }
 }
