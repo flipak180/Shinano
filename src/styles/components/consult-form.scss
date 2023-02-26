@@ -12,6 +12,10 @@
         padding: 48px;
     }
 
+    @include lg {
+        padding: 25px;
+    }
+
     .flex-row {
         gap: 60px;
 
