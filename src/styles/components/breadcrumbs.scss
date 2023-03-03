@@ -1,0 +1,46 @@
+.breadcrumbs {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px;
+    position: relative;
+
+    li {
+        position: relative;
+
+        a {
+            color: $black;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &:after {
+            content: '';
+            background: url(../images/icon-arrow4.svg);
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            right: -15px;
+            top: 10px;
+
+            @include xxl {
+                top: 8px;
+            }
+        }
+
+        &:last-child {
+
+            &:after {
+                display: none;
+            }
+
+            a {
+                color: rgba($black, 0.4);
+            }
+        }
+    }
+}

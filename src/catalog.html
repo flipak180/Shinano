@@ -6,83 +6,10 @@
     <div class="wrapper">
         <include src="./blocks/header.html"></include>
         <main class="content">
-            <section>
-                <div class="images-slider">
-                    <div class="images-slider__slides">
-                        <img src="./images/main-slider-img.png" alt="">
-                        <img src="./images/main-slider-img.png" alt="">
-                        <img src="./images/main-slider-img.png" alt="">
-                    </div>
-                    <div class="images-slider__arrow-prev"></div>
-                    <div class="images-slider__arrow-next"></div>
-                </div>
-            </section>
-            <section class="section section_categories-slider">
-                <div class="container">
-                    <h2 class="title section__title visible-xl">Быстрые ссылки</h2>
-                    <div class="categories-slider">
-                        <div class="categories-slider__arrows">
-                            <div class="categories-slider__arrow-prev"></div>
-                            <div class="categories-slider__arrow-next"></div>
-                        </div>
-                        <ul class="categories-slider__items">
-                            <li class="category-item">
-                                <a class="category-item__link" href="#">
-                                    <img class="category-item__img img-fluid" src="./images/categories-list-item-1.png"
-                                         alt=""/>
-                                    <div class="category-item__text">
-                                        <span>Пневмо гайковерты</span>
-                                        <i></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="category-item">
-                                <a class="category-item__link" href="#">
-                                    <img class="category-item__img img-fluid" src="./images/categories-list-item-2.png"
-                                         alt=""/>
-                                    <div class="category-item__text">
-                                        <span>ПНЕВМО ШУРУПОВЕРТ</span>
-                                        <i></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="category-item">
-                                <a class="category-item__link" href="#">
-                                    <img class="category-item__img img-fluid" src="./images/categories-list-item-3.png"
-                                         alt=""/>
-                                    <div class="category-item__text">
-                                        <span>ПНЕВМОДРЕЛИ</span>
-                                        <i></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="category-item">
-                                <a class="category-item__link" href="#">
-                                    <img class="category-item__img img-fluid" src="./images/categories-list-item-1.png"
-                                         alt=""/>
-                                    <div class="category-item__text">
-                                        <span>Пневмогайковерты</span>
-                                        <i></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="category-item">
-                                <a class="category-item__link" href="#">
-                                    <img class="category-item__img img-fluid" src="./images/categories-list-item-2.png"
-                                         alt=""/>
-                                    <div class="category-item__text">
-                                        <span>ПНЕВМОШУРУПОВЕРТ</span>
-                                        <i></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
             <section class="section section_bg-lines">
                 <div class="container">
-                    <h1 class="title section__title">Продукция</h1>
+                    <include src="./blocks/breadcrumbs.html"></include>
+                    <h1 class="title section__title">Каталог инструмента</h1>
                     <ul class="categories-list">
                         <li class="category-item">
                             <a class="category-item__link" href="#">
@@ -153,37 +80,28 @@
                     </ul>
                 </div>
             </section>
-            <div class="section hidden-container">
-                <div class="container">
-                    <include src="./blocks/consult-form.html"></include>
-                </div>
-            </div>
             <section class="section">
                 <div class="container">
-                    <h2 class="title section__title">Пневмоинструмент Shinano</h2>
-                    <div class="two-columns">
-                        <div class="images-slider">
-                            <div class="images-slider__slides">
-                                <img src="./images/slider-img.png" alt=""/>
-                                <img src="./images/slider-img.png" alt=""/>
-                                <img src="./images/slider-img.png" alt=""/>
-                                <img src="./images/slider-img.png" alt=""/>
+                    <div class="limited-block">
+                        <h2 class="title section__title">ОПИСАНИЕ</h2>
+                        <div class="two-columns">
+                            <img src="./images/categories-list-item-1.png" class="img-fluid img-bordered" alt="">
+                            <div class="two-columns__text">
+                                <p>Задания также обучения форм место оценить порядка, и роль направлений представляет прогрессивного форм постоянный организации же представляет реализации сложившаяся условий.</p>
+                                <p>Требуют и рамки эксперимент занимаемых поставленных и оценить высшего активности направлений идейные направлений показывает, способствует направлений нашей форм высшего таким реализации существенных рамки соображения</p>
+                                <p>форм новая рост прогрессивного соображения поставленных новая постоянный реализация играет порядка, оценить сфера нашей и практика сфера направлений заданий структура участниками оценить структура подготовки организации активности нас условий позволяет в задач.</p>
                             </div>
-                            <div class="images-slider__arrow-prev"></div>
-                            <div class="images-slider__arrow-next"></div>
                         </div>
-                        <div class="two-columns__text">
-                            <p>
-                                Компания SHINANO Inc. (Япония) была основана в 1949 году. Начиная с 1969 г. основным
-                                направлением деятельности
-                                становится производство инструмента, работающего на сжатом воздухе. Огромный опыт,
-                                накопленный компанией, позволил
-                                добиться превосходных результатов в качестве производимого пневмоинструмента, его
-                                надежности, точности и
-                                безопасности.
-                            </p>
-                            <a href="#" class="btn">Читать подробнее</a>
-                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="limited-block">
+                        <h2 class="title section__title">ТИПОВОЙ ТЕКСТ</h2>
+                        <p>Задания также обучения форм место оценить порядка, и роль направлений представляет прогрессивного форм постоянный организации же представляет реализации сложившаяся условий. Требуют и рамки эксперимент занимаемых поставленных и оценить высшего активности направлений идейные направлений показывает, способствует направлений нашей форм высшего таким реализации существенных рамки соображения форм новая рост прогрессивного соображения поставленных новая постоянный реализация играет порядка, оценить сфера нашей и практика сфера направлений заданий структура участниками оценить структура подготовки организации активности нас условий позволяет в задач.</p>
+                        <p>Сложившаяся практика анализа намеченных порядка, реализации деятельности отношении обучения позволяет идейные рамки разработке выполнять в задача постоянный финансовых и рамки оценить плановых поставленных участниками условий в равным направлений соображения рост требуют идейные важные обучения      в поставленных играет нас равным активности анализа высшего дальнейших активности место и существенных что условий.</p>
+                        <p>Представляет и позволяет плановых количественный идейные намеченных намеченных также организационной постоянный что соответствующий порядка, намеченных и задач. Выполнять соображения направлений активности структура обучения значение о</p>
                     </div>
                 </div>
             </section>
