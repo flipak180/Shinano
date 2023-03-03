@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<include src="./blocks/head.html"></include>
+<body class="page">
+    <include src="./blocks/gamecattt.html"></include>
+    <div class="wrapper">
+        <include src="./blocks/header.html"></include>
+        <main class="content">
+            <section class="section">
+                <div class="container">
+                    <h2 class="title section__title">ДОСТАВКА И ОПЛАТА</h2>
+                    <h3>Самовывоз</h3>
+                    <p><strong>Для физических лиц:</strong></p>
+                    <p>Оплатить и забрать, предварительно заказанный и забронированный товар (после подтверждения готовности вашего заказа менеджером) можно по адресу пр. Непокоренных д. 49 в будние дни с 9-00 до 17-30</p>
+                    <p><strong>Для юридических лиц:</strong></p>
+                    <p>Отгрузка товара юридическим лицам производится в будние дни с 9-00 до 17-30, по адресу по адресу пр. Непокоренных д. 49. Отгрузка осуществляется только после поступления денежных средств на расчетный счет. Для получения товара необходима доверенность или печать.</p>
+                    <h3>Доставка</h3>
+                    <p><strong>По Санкт-Петербургу и области:</strong></p>
+                    <p>Доставка осуществляется собственным автотранспортом до адреса, в течение 2-3 рабочих дней с момента укомплектования заказа. Разгрузка и доставка «до двери» осуществляется только для товара весом менее 5 кг. Товар весом более 5 кг разгружается силами покупателя.</p>
+                    <p><strong>Стоимость доставки согласно зонам на карте:</strong></p>
+                    <!-- -->
+                    <img src="./images/map.png" class="img-fluid" alt="">
+                    <p><strong>По России:</strong></p>
+                    <p>Доставка осуществляется транспортными компаниями:</p>
+                    <p>Байкал Сервис, Деловые Линии, ПЭК. Доставка до терминала транспортной кампании в СПб бесплатная. Перевозку товара оплачивает покупатель непосредственно транспортной компании СДЭК.</p>
+                    <p>Сумма доставки включается в счет на товар отдельной строкой.</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <form class="form feedback-form" action="https://auto.ru/sankt-peterburg/cars/ford/mustang/used/" method="put">
+                        <div class="feedback-form__content">
+                            <h2 class="title feedback-form__title">Отправить заявку</h2>
+                            <p class="form__text">Оставьте свои контактные данные и наши специалисты свяжутся с вами, для консультации или оформления заказа.</p>
+                            <div class="form__row flex-row">
+                                <input type="text" placeholder="Имя" name="query">
+                                <input type="text" placeholder="Телефон">
+                            </div>
+                            <div class="form__row">
+                                <textarea placeholder="Текст сообщения"></textarea>
+                            </div>
+                            <div class="form__row flex-row">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="feedback-form__rules">
+                                    <label for="feedback-form__rules">
+                                        Нажимая “отправить заявку” я соглашаюсь с условиями
+                                        <a href="">хранения персональных данных</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-block">Получить консультацию</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <div class="overlay"></div>
+        <include src="./blocks/footer.html"></include>
+    </div>
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>

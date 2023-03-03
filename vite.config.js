@@ -10,6 +10,7 @@ export default {
                 index: resolve('src/index.html'),
                 catalog: resolve('src/catalog.html'),
                 contacts: resolve('src/contacts.html'),
+                delivery: resolve('src/delivery.html'),
             },
         },
     },
