@@ -11,6 +11,7 @@ export default {
                 catalog: resolve('src/catalog.html'),
                 contacts: resolve('src/contacts.html'),
                 delivery: resolve('src/delivery.html'),
+                about: resolve('src/about.html'),
             },
         },
     },
