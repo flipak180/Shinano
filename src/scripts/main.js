@@ -1,5 +1,6 @@
 import $ from "jquery";
 import "slick-carousel";
+import Masonry from 'masonry-layout';
 
 $(".categories-slider").each(function () {
     const el = $(this);
@@ -64,4 +65,9 @@ $('.footer__subtitle').click(function() {
 
 $('.toggle-search').click(function() {
     $('.header__search').toggleClass('visible');
+});
+
+const masonry = new Masonry('.images-grid', {
+    itemSelector: 'img',
+    gutter: 23
 });

@@ -35,7 +35,7 @@
     }
     @media (min-width: #{$container}) {
         & {
-            max-width: 1664px;
+            max-width: 1724px;
             padding: 0 30px;
         }
     }
@@ -67,7 +67,7 @@
         gap: 50px;
     }
 
-    &__text {
+    .text-content {
         padding: 0 96px;
         align-self: center;
 
