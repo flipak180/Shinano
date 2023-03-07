@@ -1,6 +1,7 @@
 import $ from "jquery";
 import "slick-carousel";
 import Masonry from 'masonry-layout';
+import Inputmask from "inputmask";
 
 $(".categories-slider").each(function () {
     const el = $(this);
@@ -89,3 +90,24 @@ if (document.querySelector('.images-grid')) {
         gutter: 23
     });
 }
+
+$('[data-popup]').each(function() {
+    const el = $(this);
+    el.click(function() {
+        $(`#${el.data('popup')}`).addClass('visible');
+    });
+});
+
+$('.popup__close').click(function() {
+    $(this).closest('.popup').removeClass('visible');
+});
+
+$('.popup').click(function(e) {
+    if ($(e.target).hasClass('popup')) {
+        $(this).removeClass('visible');
+    }
+});
+
+$('input[type="tel"]').each(function() {
+    Inputmask({"mask": "+7 (999) 999-99-99"}).mask($(this)[0]);
+});

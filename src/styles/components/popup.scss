@@ -1,0 +1,43 @@
+.popup {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    &.visible {
+        display: flex;
+    }
+
+    &__content {
+        max-width: 578px;
+        background: linear-gradient(252.19deg, rgba(30, 38, 49, 0.2) 0%, rgba(163, 182, 215, 0) 91.3%), #E6EFF8;
+        padding: 64px;
+        position: relative;
+    }
+
+    &__close {
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        padding: 0;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        margin: 0 0 24px;
+        color: $black;
+    }
+}

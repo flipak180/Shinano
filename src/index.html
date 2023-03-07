@@ -187,85 +187,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="container">
-                    <form class="form feedback-form" action="https://auto.ru/sankt-peterburg/cars/ford/mustang/used/" method="put">
-                        <div class="feedback-form__content">
-                            <h2 class="title feedback-form__title">Отправить заявку</h2>
-                            <p class="form__text">Оставьте свои контактные данные и наши специалисты свяжутся с вами, для консультации или оформления заказа.</p>
-                            <div class="form__row flex-row">
-                                <input type="text" placeholder="Имя" name="query">
-                                <input type="text" placeholder="Телефон">
-                            </div>
-                            <div class="form__row">
-                                <textarea placeholder="Текст сообщения"></textarea>
-                            </div>
-                            <div class="form__row flex-row">
-                                <div class="checkbox">
-                                    <input type="checkbox" id="feedback-form__rules">
-                                    <label for="feedback-form__rules">
-                                        Нажимая “отправить заявку” я соглашаюсь с условиями
-                                        <a href="">хранения персональных данных</a>
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-block">Получить консультацию</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <section class="section section_bg">
-                <div class="container">
-                    <h2 class="title section__title">Контакты</h2>
-                    <div class="contacts-banner visible-xl">
-                        <a class="logo logo-contrast" href="#">
-                            <img src="./images/logo2.svg" class="img-fluid" alt="Shinano">
-                        </a>
-                        <div class="contact-item">
-                            <img src="./images/icon-point2.svg" alt="">
-                            <span>195220, Санкт-Петербург, пр. Непокоренных, д. 49</span>
-                        </div>
-                        <div class="contact-item">
-                            <img src="./images/icon-clock2.svg" alt="">
-                            <span>Пн.-Вс.: 10:00 - 20:00</span>
-                        </div>
-                        <div class="contact-item">
-                            <img src="./images/icon-mail2.svg" alt="">
-                            <span><a href="mailto:sales@shinano-tools.ru">sales@shinano-tools.ru</a></span>
-                        </div>
-                        <div class="contact-item">
-                            <img src="./images/icon-phone2.svg" alt="">
-                            <span>+7 (812) 999-00-00</span>
-                        </div>
-                    </div>
-                    <iframe
-                            width="100%"
-                            height="590"
-                            style="border: 0"
-                            loading="lazy"
-                            allowfullscreen
-                            src="https://www.google.com/maps/embed/v1/place?q=place_id:EjtQcm9zcGVrdCBOZXBva29yb25ueWtoLCA0OSwgU2Fua3QtUGV0ZXJidXJnLCBSdXNzaWEsIDE5NTIyMCIwEi4KFAoSCQWiidi6M5ZGEZ2LGPHKcRsdEDEqFAoSCX1lR5WvM5ZGEU3VSAtYmDG9&key=AIzaSyDQKUmK68zVFLfmLgpVtrd3cflS3PbCt5c"
-                    ></iframe>
-                    <div class="contacts-banner__contacts hidden-xl">
-                        <div class="contact-item">
-                            <img src="./images/icon-point2.svg" alt="">
-                            <span>195220, Санкт-Петербург, пр. Непокоренных, д. 49</span>
-                        </div>
-                        <div class="contact-item">
-                            <img src="./images/icon-clock2.svg" alt="">
-                            <span>Пн.-Вс.: 10:00 - 20:00</span>
-                        </div>
-                        <div class="contact-item">
-                            <img src="./images/icon-mail2.svg" alt="">
-                            <span><a href="mailto:sales@shinano-tools.ru">sales@shinano-tools.ru</a></span>
-                        </div>
-                        <div class="contact-item">
-                            <img src="./images/icon-phone2.svg" alt="">
-                            <span>+7 (812) 999-00-00</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <include src="./blocks/feedback-form.html"></include>
+            <include src="./blocks/contacts-section.html"></include>
         </main>
         <div class="overlay"></div>
         <include src="./blocks/footer.html"></include>

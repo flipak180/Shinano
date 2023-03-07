@@ -22,7 +22,7 @@
                 transition: transform 0.2s;
 
                 &:hover {
-                    transform: rotate(90deg);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -34,10 +34,10 @@
 
             &:hover {
                 background: rgba($black, 0.6);
-            }
 
-            img:hover {
-                transform: none;
+                img {
+                    transform: scale(1.1);
+                }
             }
         }
     }

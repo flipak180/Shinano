@@ -90,33 +90,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="container">
-                    <form class="form feedback-form" action="https://auto.ru/sankt-peterburg/cars/ford/mustang/used/" method="put">
-                        <div class="feedback-form__content">
-                            <h2 class="title feedback-form__title">Отправить заявку</h2>
-                            <p class="form__text">Оставьте свои контактные данные и наши специалисты свяжутся с вами, для консультации или оформления заказа.</p>
-                            <div class="form__row flex-row">
-                                <input type="text" placeholder="Имя" name="query">
-                                <input type="text" placeholder="Телефон">
-                            </div>
-                            <div class="form__row">
-                                <textarea placeholder="Текст сообщения"></textarea>
-                            </div>
-                            <div class="form__row flex-row">
-                                <div class="checkbox">
-                                    <input type="checkbox" id="feedback-form__rules">
-                                    <label for="feedback-form__rules">
-                                        Нажимая “отправить заявку” я соглашаюсь с условиями
-                                        <a href="">хранения персональных данных</a>
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-block">Получить консультацию</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
+            <include src="./blocks/feedback-form.html"></include>
         </main>
         <div class="overlay"></div>
         <include src="./blocks/footer.html"></include>
