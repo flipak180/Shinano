@@ -57,7 +57,7 @@ $('.main-slider').slick({
     dots: true,
 });
 
-$(".products-list__slider").each(function () {
+$(".products__slider").each(function () {
     $(this).slick({
         slidesToShow: 1,
         dots: true,
@@ -110,4 +110,13 @@ $('.popup').click(function(e) {
 
 $('input[type="tel"]').each(function() {
     Inputmask({"mask": "+7 (999) 999-99-99"}).mask($(this)[0]);
+});
+
+$('.products__view-link').click(function() {
+    const products = $(this).closest('.products');
+    if ($(this).data('view') === 'grid') {
+        products.removeClass('products-list_view')
+    } else {
+        products.addClass('products-list_view')
+    }
 });
