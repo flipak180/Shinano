@@ -2,8 +2,14 @@
     margin-bottom: 50px;
 
     &.products-list_view {
+
         .products__info .products__title {
             display: none;
+        }
+
+        .products__description,
+        .products__info {
+            padding-top: 60px;
         }
     }
 
@@ -165,7 +171,7 @@
 
         .products-list_view & {
             display: grid;
-            grid-template-columns: min-content auto min-content;
+            grid-template-columns: max-content auto min-content;
             gap: 24px;
         }
     }
@@ -286,6 +292,25 @@
             &-minus,
             &-plus {
                 cursor: pointer;
+            }
+        }
+    }
+
+    &__props {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            .dots {
+                flex-grow: 1;
+                border-bottom: 1px dashed rgba($black, 0.4);
+                margin: 0 10px;
             }
         }
     }
