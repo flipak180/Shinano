@@ -12,6 +12,7 @@ export default {
                 contacts: resolve('src/contacts.html'),
                 delivery: resolve('src/delivery.html'),
                 about: resolve('src/about.html'),
+                category: resolve('src/category.html'),
             },
         },
     },

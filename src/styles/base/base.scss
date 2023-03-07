@@ -66,3 +66,9 @@
         opacity: 1;
     }
 }
+
+.aside-grid {
+    display: grid;
+    grid-template-columns: 316px minmax(0, max-content);
+    gap: 76px;
+}
