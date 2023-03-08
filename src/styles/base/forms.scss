@@ -7,6 +7,10 @@
 
     &__row {
         margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     input, textarea {
@@ -43,7 +47,7 @@
             font-size: 0.875rem;
             line-height: 150%;
             color: rgba($black, 0.4);
-            padding-left: 40px;
+            padding-left: 38px;
             position: relative;
             cursor: pointer;
 
@@ -64,6 +68,7 @@
                 background-position: center;
                 position: absolute;
                 left: 0;
+                border: 1px solid rgba($black, 0.4);
             }
         }
 
@@ -95,6 +100,21 @@
 
         &:hover {
             color: #fff;
+        }
+    }
+
+    &.filters {
+
+        .form__row {
+            margin-bottom: 10px;
+        }
+
+        .checkbox {
+
+            input + label {
+                line-height: 2rem;
+                color: $black;
+            }
         }
     }
 }

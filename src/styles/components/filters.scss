@@ -1,0 +1,54 @@
+.filters {
+
+    &__group {
+        margin-bottom: 48px;
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            cursor: pointer;
+
+            .open & {
+                margin-bottom: 30px;
+            }
+
+            span {
+                position: relative;
+            }
+
+            &.active {
+
+                span:after {
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    background-color: $blue;
+                    display: block;
+                    position: absolute;
+                    top: 7px;
+                    left: calc(100% + 12px);
+                }
+            }
+        }
+
+        &-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s;
+
+            .open & {
+                max-height: 500px;
+            }
+        }
+    }
+
+    .btn {
+        padding: 10px 0;
+
+        &:hover {
+            background-color: rgba($black, 0.4);
+            color: #fff;
+        }
+    }
+}
