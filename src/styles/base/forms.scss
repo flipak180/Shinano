@@ -19,6 +19,7 @@
         border: none;
         padding: 18px 20px;
         width: 100%;
+        cursor: pointer;
 
         ::placeholder {
             color: rgba($blue, 0.6);
@@ -27,69 +28,6 @@
 
     textarea {
         height: 240px;
-    }
-
-    .checkbox {
-        display: flex;
-        gap: 16px;
-        align-items: center;
-
-        input {
-            position: absolute;
-            z-index: -1;
-            opacity: 0;
-            width: auto;
-        }
-
-        input + label {
-            user-select: none;
-            margin: 0;
-            font-size: 0.875rem;
-            line-height: 150%;
-            color: rgba($black, 0.4);
-            padding-left: 38px;
-            position: relative;
-            cursor: pointer;
-
-            @include lg {
-                & {
-                    color: $black;
-                }
-            }
-
-            &:before {
-                content: '';
-                margin-top: 5px;
-                display: inline-block;
-                width: 22px;
-                height: 22px;
-                background-color: rgba(255, 255, 255, 0.6);
-                background-repeat: no-repeat;
-                background-position: center;
-                position: absolute;
-                left: 0;
-                border: 1px solid rgba($black, 0.4);
-            }
-        }
-
-        input:checked + label::before {
-            background-image: url(../images/icon-checkbox.svg);
-            background-color: $blue !important;
-        }
-
-        a {
-            color: rgba($black, 0.4);
-
-            @include lg {
-                & {
-                    color: $black;
-                }
-            }
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
     }
     
     button {
@@ -102,19 +40,138 @@
             color: #fff;
         }
     }
+}
 
-    &.filters {
+.checkbox {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 
-        .form__row {
-            margin-bottom: 10px;
-        }
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        width: auto;
+    }
 
-        .checkbox {
+    input + label {
+        user-select: none;
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 150%;
+        color: rgba($black, 0.4);
+        padding-left: 38px;
+        position: relative;
+        cursor: pointer;
 
-            input + label {
-                line-height: 2rem;
+        @include lg {
+            & {
                 color: $black;
             }
+        }
+
+        &:before {
+            content: '';
+            margin-top: 5px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-color: rgba(255, 255, 255, 0.6);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 0;
+            border: 1px solid rgba($black, 0.4);
+        }
+    }
+
+    input:checked + label::before {
+        background-image: url(../images/icon-checkbox.svg);
+        background-color: $blue !important;
+    }
+
+    a {
+        color: rgba($black, 0.4);
+
+        @include lg {
+            & {
+                color: $black;
+            }
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.range {
+    margin-bottom: 15px;
+
+    &__inputs {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 24px;
+        position: relative;
+
+        > div {
+            position: relative;
+
+            &:before {
+                display: block;
+                position: absolute;
+                left: 10px;
+                top: 14px;
+                color: rgba($black, 0.4);
+            }
+
+            &:first-child:before {
+                content: 'от';
+            }
+
+            &:last-child:before {
+                content: 'до';
+            }
+        }
+
+        input {
+            padding: 10px 10px 10px 35px;
+            border: 1px solid rgba($black, 0.4);
+            font-size: 1.5rem;
+            cursor: pointer;
+            max-width: 150px;
+        }
+    }
+
+    .noUi-target {
+        box-shadow: none;
+    }
+
+    .noUi-horizontal {
+        height: 1px;
+    }
+
+    .noUi-connects {
+        overflow: visible;
+    }
+
+    .noUi-connect {
+        height: 1px;
+        background: $blue;
+    }
+
+    .noUi-horizontal .noUi-handle {
+        box-shadow: none;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        top: -10px;
+
+        &:before,
+        &:after {
+            display: none;
         }
     }
 }

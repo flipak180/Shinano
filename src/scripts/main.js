@@ -138,7 +138,8 @@ $('.range').each(function() {
         range: {
             'min': 0,
             'max': 100
-        }
+        },
+        step: 10,
     });
 
     slider.noUiSlider.on('update', function (values, handle) {

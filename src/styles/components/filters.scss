@@ -33,13 +33,27 @@
         }
 
         &-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s;
+            display: none;
 
             .open & {
-                max-height: 500px;
+                display: block;
             }
+        }
+    }
+
+    .form__row {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .checkbox {
+
+        input + label {
+            line-height: 2rem;
+            color: $black;
         }
     }
 
