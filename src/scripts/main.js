@@ -121,6 +121,8 @@ $('.products__view-link').click(function() {
     } else {
         products.addClass('products-list_view')
     }
+
+    $('.products__slider').slick('refresh');
 });
 
 $('.filters__group-title').click(function() {
