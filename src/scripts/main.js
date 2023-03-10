@@ -4,6 +4,7 @@ import Masonry from 'masonry-layout';
 import Inputmask from "inputmask";
 import noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
+import 'lightbox2/dist/css/lightbox.min.css';
 
 $(".categories-slider").each(function () {
     const el = $(this);
@@ -64,6 +65,18 @@ $(".products__slider").each(function () {
         slidesToShow: 1,
         dots: true,
     });
+});
+
+$('.product__slider-big').slick({
+    slidesToShow: 1,
+    asNavFor: '.product__slider-small'
+});
+
+$('.product__slider-small').slick({
+    slidesToShow: 4,
+    asNavFor: '.product__slider-big',
+    centerMode: true,
+    focusOnSelect: true
 });
 
 const overlay = $('.overlay');

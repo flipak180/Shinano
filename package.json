@@ -17,6 +17,7 @@
     "dependencies": {
         "inputmask": "^5.0.7",
         "jquery": "^3.6.3",
+        "lightbox2": "^2.11.4",
         "masonry-layout": "^4.2.2",
         "nouislider": "^15.7.0",
         "slick-carousel": "^1.8.1"

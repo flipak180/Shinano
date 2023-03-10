@@ -13,6 +13,7 @@ export default {
                 delivery: resolve('src/delivery.html'),
                 about: resolve('src/about.html'),
                 category: resolve('src/category.html'),
+                product: resolve('src/product.html'),
             },
         },
     },
