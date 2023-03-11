@@ -376,7 +376,7 @@
         list-style: none;
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
@@ -385,6 +385,10 @@
                 flex-grow: 1;
                 border-bottom: 1px dashed rgba($black, 0.4);
                 margin: 0 10px;
+            }
+
+            strong {
+                font-size: larger;
             }
         }
     }

@@ -27,4 +27,12 @@
     &:hover {
         background-color: $blue;
     }
+
+    &-primary {
+        background-color: $blue;
+
+        &:hover {
+            background-color: rgba($blue, 0.8);
+        }
+    }
 }

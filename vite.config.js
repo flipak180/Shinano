@@ -14,6 +14,7 @@ export default {
                 about: resolve('src/about.html'),
                 category: resolve('src/category.html'),
                 product: resolve('src/product.html'),
+                cart: resolve('src/cart.html'),
             },
         },
     },
