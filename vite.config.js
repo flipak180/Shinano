@@ -17,6 +17,7 @@ export default {
                 cart: resolve('src/cart.html'),
                 purchase: resolve('src/purchase.html'),
                 success: resolve('src/success.html'),
+                inner: resolve('src/inner.html'),
             },
         },
     },
