@@ -10,6 +10,28 @@
                 <div class="container">
                     <include src="./blocks/breadcrumbs.html"></include>
                     <h2 class="title section__title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+                    <div class="tabs">
+                        <nav class="tabs__nav">
+                            <ul>
+                                <li><button data-tab="step-1" class="active">Шаг 1. Контактные данные</button></li>
+                                <li><button data-tab="step-2">Шаг 2. Доставка и самовывоз</button></li>
+                                <li><button data-tab="step-3">Шаг 3. Оплата</button></li>
+                                <li><button data-tab="step-4">Шаг 4. Заказ оформлен</button></li>
+                            </ul>
+                        </nav>
+                        <div class="tabs__content visible" data-tab="step-1">
+                            <p>Step 1</p>
+                        </div>
+                        <div class="tabs__content" data-tab="step-2">
+                            <p>Step 2</p>
+                        </div>
+                        <div class="tabs__content" data-tab="step-3">
+                            <p>Step 3</p>
+                        </div>
+                        <div class="tabs__content" data-tab="step-4">
+                            <p>Step 4</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <include src="./blocks/feedback-form.html"></include>
