@@ -6,7 +6,7 @@
     line-height: 150%;
     background-color: $black;
     min-width: 220px;
-    padding: 16px 0;
+    padding: 16px;
     transition: all 0.2s ease-in;
     text-align: center;
     display: inline-block;
@@ -39,8 +39,6 @@
     &-white {
         background-color: #fff;
         color: $black;
-        padding-left: 16px;
-        padding-right: 16px;
 
         &:hover {
             color: #fff;

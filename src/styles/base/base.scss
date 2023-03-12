@@ -54,6 +54,32 @@
     white-space: nowrap;
 }
 
+.watermark {
+    background-image: url(../images/bg-logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.info-text {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 32px;
+        font-weight: normal;
+    }
+
+    p {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 .mb-2 { margin-bottom: 2rem; }
 .mt-2 { margin-top: 2rem; }
 
