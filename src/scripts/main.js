@@ -209,10 +209,13 @@ $('.range').each(function() {
 });
 
 $('button[data-tab]').click(function () {
-  const tabs = $(this).closest('.tabs');
-  $('.tabs__content', tabs).removeClass('visible');
-  $(`.tabs__content[data-tab=${$(this).data('tab')}]`).addClass('visible');
+    const tabs = $(this).closest('.tabs');
+    const targetTab = $(`.tabs__content[data-tab=${$(this).data('tab')}]`);
+    $('.tabs__content', tabs).removeClass('visible');
+    targetTab.addClass('visible');
 
-  $('button[data-tab]', tabs).removeClass('active');
-  $(this).addClass('active');
+    $('button[data-tab]', tabs).removeClass('active');
+    $(this).addClass('active');
+
+    $('.images-slider__slides', targetTab).slick('refresh');
 });
