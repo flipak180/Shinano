@@ -35,4 +35,15 @@
             background-color: rgba($blue, 0.8);
         }
     }
+
+    &-white {
+        background-color: #fff;
+        color: $black;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
 }

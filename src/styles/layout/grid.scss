@@ -1,91 +1,105 @@
 .wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .container {
-  padding: 0 20px;
-  margin: 0 auto;
-  position: relative;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
 
-  @media (min-width: #{$screen-sm-min}) {
-    & {
-      max-width: 540px;
+    @media (min-width: #{$screen-sm-min}) {
+        & {
+            max-width: 540px;
+        }
     }
-  }
-  @media (min-width: #{$screen-md-min}) {
-    & {
-      max-width: 720px;
+    @media (min-width: #{$screen-md-min}) {
+        & {
+            max-width: 720px;
+        }
     }
-  }
-  @media (min-width: #{$screen-lg-min}) {
-    & {
-      max-width: 960px;
+    @media (min-width: #{$screen-lg-min}) {
+        & {
+            max-width: 960px;
+        }
     }
-  }
-  @media (min-width: #{$screen-xl-min}) {
-    & {
-      max-width: 1140px;
+    @media (min-width: #{$screen-xl-min}) {
+        & {
+            max-width: 1140px;
+        }
     }
-  }
-  @media (min-width: #{$screen-xxl-min}) {
-    & {
-      max-width: 1320px;
+    @media (min-width: #{$screen-xxl-min}) {
+        & {
+            max-width: 1320px;
+        }
     }
-  }
-  @media (min-width: #{$container}) {
-    & {
-      max-width: 1724px;
-      padding: 0 30px;
+    @media (min-width: #{$container}) {
+        & {
+            max-width: 1724px;
+            padding: 0 30px;
+        }
     }
-  }
 }
 
 .flex-row {
-  display: flex;
-  gap: 20px;
-
-  &.g-20 {
+    display: flex;
     gap: 20px;
-  }
 
-  > * {
-    width: 100%;
-  }
+    &.g-20 {
+        gap: 20px;
+    }
 
-  @include lg {
-    flex-direction: column;
-  }
-}
-
-.two-columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  @include lg {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 50px;
-  }
-
-  .text-content {
-    padding: 0 96px;
-    align-self: center;
-
-    @include xxl {
-      padding: 0 50px;
+    > * {
+        width: 100%;
     }
 
     @include lg {
-      padding: 0;
+        flex-direction: column;
     }
-  }
+}
 
-  p {
-    font-weight: 400;
-    line-height: 170%;
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    &:first-child {
-      margin-top: 0;
+    @include lg {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 50px;
     }
-  }
+
+    .text-content {
+        padding: 0 96px;
+        align-self: center;
+
+        @include xxl {
+            padding: 0 50px;
+        }
+
+        @include lg {
+            padding: 0;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        line-height: 170%;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.aside-content {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: auto 400px;
+
+    aside {
+        max-width: 400px;
+    }
+
+    @include container {
+        grid-template-columns: 1fr;
+    }
 }

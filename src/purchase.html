@@ -19,17 +19,182 @@
                                 <li><button data-tab="step-4">Шаг 4. Заказ оформлен</button></li>
                             </ul>
                         </nav>
-                        <div class="tabs__content visible" data-tab="step-1">
-                            <p>Step 1</p>
+                        <div class="tabs__content" data-tab="step-1">
+                            <div class="aside-content">
+                                <div>
+                                    <form action="" class="form form-bordered">
+                                        <div class="two-columns">
+                                            <div>
+                                                <h4 class="mb-2">Персональные данные</h4>
+                                                <div class="form__row">
+                                                    <input type="text" placeholder="Имя*" required>
+                                                </div>
+                                                <div class="form__row">
+                                                    <input type="text" placeholder="Фамилия*" required>
+                                                </div>
+                                                <div class="form__row">
+                                                    <input type="text" placeholder="Отчество">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4 class="mb-2">Контактная информация</h4>
+                                                <div class="form__row">
+                                                    <input type="tel" placeholder="Телефон*" required>
+                                                </div>
+                                                <div class="form__row">
+                                                    <input type="email" placeholder="Email*" required>
+                                                </div>
+                                                <div class="form__row">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="order-form__rules">
+                                                        <label for="order-form__rules">
+                                                            Нажимая “отправить заявку” я соглашаюсь с условиями
+                                                            <a href="">хранения персональных данных</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn pull-right mt-2">продолжить</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <aside>
+                                    <div class="box">
+                                        <h4>Детали заказа:</h4>
+                                        <ul class="products__props">
+                                            <li>
+                                                <span>14 товаров</span>
+                                                <span class="dots"></span>
+                                                <span>387 138 ₽</span>
+                                            </li>
+                                            <li>
+                                                <span>Скидка</span>
+                                                <span class="dots"></span>
+                                                <span>151 000 ₽</span>
+                                            </li>
+                                            <li>
+                                                <strong>Итого</strong>
+                                                <span class="dots"></span>
+                                                <strong>236 138 ₽</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
                         </div>
                         <div class="tabs__content" data-tab="step-2">
-                            <p>Step 2</p>
+                            <div class="aside-content">
+                                <div>
+                                    <h4 class="mb-2">Выберите способ получения заказа</h4>
+                                </div>
+                                <aside>
+                                    <div class="box">
+                                        <h4>Детали заказа:</h4>
+                                        <ul class="products__props">
+                                            <li>
+                                                <span>14 товаров</span>
+                                                <span class="dots"></span>
+                                                <span>387 138 ₽</span>
+                                            </li>
+                                            <li>
+                                                <span>Скидка</span>
+                                                <span class="dots"></span>
+                                                <span>151 000 ₽</span>
+                                            </li>
+                                            <li>
+                                                <strong>Итого</strong>
+                                                <span class="dots"></span>
+                                                <strong>236 138 ₽</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
                         </div>
-                        <div class="tabs__content" data-tab="step-3">
-                            <p>Step 3</p>
+                        <div class="tabs__content visible" data-tab="step-3">
+                            <div class="aside-content">
+                                <div>
+                                    <h4 class="mb-2">Выберите способ оплаты</h4>
+                                    <form action="" class="form">
+                                        <div class="form__row">
+                                            <div class="radio">
+                                                <input type="radio" name="payment" id="payment-1" checked>
+                                                <label for="payment-1">Оплата по безналичному расчету для юридических лиц (Для получения товара необходима доверенность или печать)</label>
+                                            </div>
+                                        </div>
+                                        <div class="form__row">
+                                            <div class="radio">
+                                                <input type="radio" name="payment" id="payment-2">
+                                                <label for="payment-2">Оплата банковской картой в Пунктах выдачи заказа</label>
+                                            </div>
+                                        </div>
+                                        <div class="form__row">
+                                            <div class="radio">
+                                                <input type="radio" name="payment" id="payment-3">
+                                                <label for="payment-3">Оплата наличными в Пунктах выдачи заказа</label>
+                                            </div>
+                                        </div>
+                                        <div class="form__row">
+                                            <div class="radio">
+                                                <input type="radio" name="payment" id="payment-4">
+                                                <label for="payment-4">Оплата наличными или банковской картой курьеру </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn pull-right mt-2">продолжить</button>
+                                    </form>
+                                </div>
+                                <aside>
+                                    <div class="box">
+                                        <h4>Детали заказа:</h4>
+                                        <ul class="products__props">
+                                            <li>
+                                                <span>14 товаров</span>
+                                                <span class="dots"></span>
+                                                <span>387 138 ₽</span>
+                                            </li>
+                                            <li>
+                                                <span>Скидка</span>
+                                                <span class="dots"></span>
+                                                <span>151 000 ₽</span>
+                                            </li>
+                                            <li>
+                                                <strong>Итого</strong>
+                                                <span class="dots"></span>
+                                                <strong>236 138 ₽</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
                         </div>
                         <div class="tabs__content" data-tab="step-4">
-                            <p>Step 4</p>
+                            <div class="aside-content">
+                                <div>
+                                    <p>Step 4</p>
+                                </div>
+                                <aside>
+                                    <div class="box">
+                                        <h4>Детали заказа:</h4>
+                                        <ul class="products__props">
+                                            <li>
+                                                <span>14 товаров</span>
+                                                <span class="dots"></span>
+                                                <span>387 138 ₽</span>
+                                            </li>
+                                            <li>
+                                                <span>Скидка</span>
+                                                <span class="dots"></span>
+                                                <span>151 000 ₽</span>
+                                            </li>
+                                            <li>
+                                                <strong>Итого</strong>
+                                                <span class="dots"></span>
+                                                <strong>236 138 ₽</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
                         </div>
                     </div>
                 </div>

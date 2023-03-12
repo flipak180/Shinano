@@ -26,26 +26,33 @@
         }
     }
 
+    &.form-bordered {
+
+        input, textarea {
+            border: 1px solid rgba($black, 0.4);
+        }
+
+        button {
+            background-color: $black;
+            color: #fff;
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+
     textarea {
         height: 240px;
     }
-    
-    button {
-        background-color: #fff;
-        color: $black;
-        padding-left: 16px;
-        padding-right: 16px;
 
-        &:hover {
-            color: #fff;
-        }
+    .two-columns {
+        gap: 24px;
     }
 }
 
-.checkbox {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+.checkbox,
+.radio {
 
     input {
         position: absolute;
@@ -57,22 +64,13 @@
     input + label {
         user-select: none;
         margin: 0;
-        font-size: 0.875rem;
         line-height: 150%;
-        color: rgba($black, 0.4);
         padding-left: 38px;
         position: relative;
         cursor: pointer;
 
-        @include lg {
-            & {
-                color: $black;
-            }
-        }
-
         &:before {
             content: '';
-            margin-top: 5px;
             display: inline-block;
             width: 22px;
             height: 22px;
@@ -89,6 +87,27 @@
         background-image: url(../images/icon-checkbox.svg);
         background-color: $blue !important;
     }
+}
+
+.checkbox {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    input + label {
+        font-size: 14px;
+        color: rgba($black, 0.4);
+
+        @include lg {
+            & {
+                color: $black;
+            }
+        }
+
+        &:before {
+            margin-top: 5px;
+        }
+    }
 
     a {
         color: rgba($black, 0.4);
@@ -103,6 +122,11 @@
             text-decoration: none;
         }
     }
+}
+
+.radio {
+    padding: 18px 20px;
+    box-shadow: 0 0 8px rgba(26, 73, 154, 0.2);
 }
 
 .range {

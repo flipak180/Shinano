@@ -5,6 +5,7 @@
     position: relative;
     //display: none;
 }
+
 .burger-menu .icon-left {
     transition-duration: 0.2s;
     position: absolute;
@@ -12,10 +13,12 @@
     width: 11px;
     top: 11px;
 }
+
 .open.burger-menu .icon-left {
     transition-duration: 0.2s;
     background: transparent !important;
 }
+
 .burger-menu .icon-left:before {
     transition-duration: 0.2s;
     position: absolute;
@@ -24,9 +27,11 @@
     content: '';
     top: -7px;
 }
+
 .open.burger-menu .icon-left:before {
     transform: rotateZ(45deg) scaleX(1.4) translate(1px, 1px);
 }
+
 .burger-menu .icon-left:after {
     transition-duration: 0.2s;
     position: absolute;
@@ -35,9 +40,11 @@
     content: '';
     top: 7px;
 }
+
 .open.burger-menu .icon-left:after {
     transform: rotateZ(-45deg) scaleX(1.4) translate(1px, -1px);
 }
+
 .burger-menu .icon-right {
     transition-duration: 0.2s;
     position: absolute;
@@ -46,10 +53,12 @@
     top: 11px;
     left: 11px;
 }
+
 .open.burger-menu .icon-right {
     transition-duration: 0.2s;
     background: transparent !important;
 }
+
 .burger-menu .icon-right:before {
     transition-duration: 0.2s;
     position: absolute;
@@ -58,9 +67,11 @@
     content: '';
     top: -7px;
 }
+
 .open.burger-menu .icon-right:before {
     transform: rotateZ(-45deg) scaleX(1.4) translate(-1px, 1px);
 }
+
 .burger-menu .icon-right:after {
     transition-duration: 0.2s;
     position: absolute;
@@ -69,6 +80,7 @@
     content: '';
     top: 7px;
 }
+
 .open.burger-menu .icon-right:after {
     transform: rotateZ(45deg) scaleX(1.4) translate(-1px, -1px);
 }
@@ -91,7 +103,7 @@
 .header__nav-catalog-link:hover .burger-menu .icon-left:after,
 .header__nav-catalog-link:hover .burger-menu .icon-right,
 .header__nav-catalog-link:hover .burger-menu .icon-right:before,
-.header__nav-catalog-link:hover .burger-menu .icon-right:after{
+.header__nav-catalog-link:hover .burger-menu .icon-right:after {
     background-color: #fff;
 }
 
@@ -100,6 +112,6 @@
 .header__nav-catalog-link.active .burger-menu .icon-left:after,
 .header__nav-catalog-link.active .burger-menu .icon-right,
 .header__nav-catalog-link.active .burger-menu .icon-right:before,
-.header__nav-catalog-link.active .burger-menu .icon-right:after{
+.header__nav-catalog-link.active .burger-menu .icon-right:after {
     background-color: #fff;
 }

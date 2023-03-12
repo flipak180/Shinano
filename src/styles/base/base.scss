@@ -17,6 +17,7 @@
         font-size: 14px;
     }
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -52,6 +53,11 @@
 .nowrap {
     white-space: nowrap;
 }
+
+.mb-2 { margin-bottom: 2rem; }
+.mt-2 { margin-top: 2rem; }
+
+.pull-right { float: right; }
 
 .overlay {
     position: fixed;
