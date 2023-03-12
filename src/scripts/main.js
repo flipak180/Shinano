@@ -207,3 +207,12 @@ $('.range').each(function() {
         });
     });
 });
+
+$('button[data-tab]').click(function () {
+  const tabs = $(this).closest('.tabs');
+  $('.tabs__content', tabs).removeClass('visible');
+  $(`.tabs__content[data-tab=${$(this).data('tab')}]`).addClass('visible');
+
+  $('button[data-tab]', tabs).removeClass('active');
+  $(this).addClass('active');
+});
