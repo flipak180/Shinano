@@ -125,6 +125,7 @@ $('[data-popup]').each(function() {
     const el = $(this);
     el.click(function() {
         $(`#${el.data('popup')}`).addClass('visible');
+        return false;
     });
 });
 
