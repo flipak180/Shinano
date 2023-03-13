@@ -80,6 +80,8 @@
     }
 }
 
+.g-1 { gap: 1.5rem; }
+
 .mb-2 { margin-bottom: 2rem; }
 .mt-2 { margin-top: 2rem; }
 
@@ -152,5 +154,13 @@
             transform: scale(1.1);
             background: rgba($black, 0.4) url(../images/icon-play.svg) no-repeat center;
         }
+    }
+}
+
+.delivery-details {
+    display: none;
+
+    &.visible {
+        display: block;
     }
 }

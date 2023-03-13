@@ -237,3 +237,8 @@ $('button[data-tab]').click(function () {
     $('..connected__slider-big__slides', targetTab).slick('refresh');
     $('..connected__slider-small__slides', targetTab).slick('refresh');
 });
+
+$('input[name="delivery"]').change(function() {
+    $('.delivery-details').removeClass('visible');
+    $('.delivery-details[data-id="' + $(this).attr('id') + '"]').addClass('visible');
+});

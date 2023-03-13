@@ -7,6 +7,8 @@
 
     &__row {
         margin-bottom: 25px;
+        display: flex;
+        gap: 24px;
 
         &:last-child {
             margin-bottom: 0;
@@ -65,7 +67,7 @@
         user-select: none;
         margin: 0;
         line-height: 150%;
-        padding-left: 38px;
+        padding-left: 43px;
         position: relative;
         cursor: pointer;
 
@@ -79,6 +81,8 @@
             background-position: center;
             position: absolute;
             left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
             border: 1px solid rgba($black, 0.4);
         }
     }
@@ -125,8 +129,21 @@
 }
 
 .radio {
+    display: flex;
+    align-items: center;
+    gap: 24px;
     padding: 18px 20px;
     box-shadow: 0 0 8px rgba(26, 73, 154, 0.2);
+
+    label {
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+    }
 }
 
 .range {

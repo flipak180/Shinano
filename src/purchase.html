@@ -82,10 +82,64 @@
                                 </aside>
                             </div>
                         </div>
-                        <div class="tabs__content" data-tab="step-2">
+                        <div class="tabs__content visible" data-tab="step-2">
                             <div class="aside-content">
                                 <div>
                                     <h4 class="mb-2">Выберите способ получения заказа</h4>
+                                    <form action="" class="form form-bordered">
+                                        <div class="two-columns g-1 mb-2">
+                                            <div class="radio">
+                                                <input type="radio" name="delivery" id="delivery-1" checked>
+                                                <label for="delivery-1">
+                                                    <span><img src="./images/icon-markers.svg" alt=""><strong>Самовывоз</strong></span>
+                                                    <span>195220, Санкт-Петербург, пр. Непокоренных, д. 49</span>
+                                                    <span>пн-пт с 9:00 до 17:30</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="delivery" id="delivery-2">
+                                                <label for="delivery-2">
+                                                    <span><img src="./images/icon-delivery.svg" alt=""><strong>Доставка</strong></span>
+                                                    <span>По СПб и ЛО: 2-3 рабочих дня</span>
+                                                    <span>По России: Транспортной компанией</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="delivery-details visible" data-id="delivery-1">
+                                            <iframe
+                                                    width="100%"
+                                                    height="433"
+                                                    style="border: 0"
+                                                    loading="lazy"
+                                                    allowfullscreen
+                                                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EjtQcm9zcGVrdCBOZXBva29yb25ueWtoLCA0OSwgU2Fua3QtUGV0ZXJidXJnLCBSdXNzaWEsIDE5NTIyMCIwEi4KFAoSCQWiidi6M5ZGEZ2LGPHKcRsdEDEqFAoSCX1lR5WvM5ZGEU3VSAtYmDG9&key=AIzaSyDQKUmK68zVFLfmLgpVtrd3cflS3PbCt5c"
+                                            ></iframe>
+                                            <div class="text-content mt-2">
+                                                <p><strong>Для физических лиц:</strong></p>
+                                                <p>Оплатить и забрать, предварительно заказанный и забронированный товар (после подтверждения готовности вашего заказа менеджером) можно по адресу пр. Непокоренных д. 49 в будние дни с 9-00 до 17-30</p>
+                                                <p><strong>Для юридических лиц:</strong></p>
+                                                <p>Отгрузка товара юридическим лицам производится в будние дни с 9-00 до 17-30, по адресу по адресу пр. Непокоренных д. 49. Отгрузка осуществляется только после поступления денежных средств на расчетный счет. Для получения товара необходима доверенность или печать.</p>
+                                            </div>
+                                        </div>p
+                                        <div class="delivery-details" data-id="delivery-2">
+                                            <div class="form__row">
+                                                <input type="text" placeholder="Город*" required>
+                                                <input type="text" placeholder="Почтовый индекс*" required>
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" placeholder="Улица*" required>
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" placeholder="Дом*" required>
+                                                <input type="text" placeholder="Квартира/ офис*" required>
+                                                <input type="text" placeholder="Подъезд. этаж">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" placeholder="Комментарий курьеру">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn pull-right mt-2">продолжить</button>
+                                    </form>
                                 </div>
                                 <aside>
                                     <div class="box">
@@ -111,7 +165,7 @@
                                 </aside>
                             </div>
                         </div>
-                        <div class="tabs__content visible" data-tab="step-3">
+                        <div class="tabs__content" data-tab="step-3">
                             <div class="aside-content">
                                 <div>
                                     <h4 class="mb-2">Выберите способ оплаты</h4>
