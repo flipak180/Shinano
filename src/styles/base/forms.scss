@@ -10,6 +10,10 @@
         display: flex;
         gap: 24px;
 
+        @include sm {
+            flex-direction: column;
+        }
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -134,6 +138,7 @@
     gap: 24px;
     padding: 18px 20px;
     box-shadow: 0 0 8px rgba(26, 73, 154, 0.2);
+    width: 100%;
 
     label {
 
@@ -209,6 +214,7 @@
         border: 1px solid $blue;
         border-radius: 50%;
         top: -10px;
+        cursor: pointer;
 
         &:before,
         &:after {

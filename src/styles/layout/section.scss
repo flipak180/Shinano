@@ -1,7 +1,10 @@
 .section {
-    padding-top: 64px;
     padding-bottom: 128px;
     overflow: hidden;
+
+    &:first-child {
+        padding-top: 2rem;
+    }
 
     @include xl {
         padding-top: 48px;

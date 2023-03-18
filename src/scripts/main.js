@@ -52,6 +52,20 @@ $(".content-images-slider").each(function () {
         slidesToShow: 3,
         prevArrow: $(".slider__arrow-prev", el),
         nextArrow: $(".slider__arrow-next", el),
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     });
 });
 
@@ -76,7 +90,15 @@ $('.product__slider-small').slick({
     slidesToShow: 4,
     asNavFor: '.product__slider-big',
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+    ],
 });
 
 $('.connected__slider-big__slides').slick({
@@ -92,6 +114,14 @@ $('.connected__slider-small__slides').slick({
     focusOnSelect: true,
     prevArrow: $(".connected__slider-small__arrow-prev"),
     nextArrow: $(".connected__slider-small__arrow-next"),
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+    ],
 });
 
 const overlay = $('.overlay');
@@ -234,8 +264,8 @@ $('button[data-tab]').click(function () {
     $(this).addClass('active');
 
     $('.images-slider__slides', targetTab).slick('refresh');
-    $('..connected__slider-big__slides', targetTab).slick('refresh');
-    $('..connected__slider-small__slides', targetTab).slick('refresh');
+    $('.connected__slider-big__slides', targetTab).slick('refresh');
+    $('.connected__slider-small__slides', targetTab).slick('refresh');
 });
 
 $('input[name="delivery"]').change(function() {
