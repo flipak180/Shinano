@@ -60,6 +60,18 @@
         gap: 24px;
         align-items: center;
         white-space: nowrap;
+
+        @include sm {
+            gap: 12px;
+            justify-content: flex-end;
+            align-items: center;
+
+            .hidden-sm {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 
     &__contact {
@@ -88,6 +100,7 @@
         grid-column: 2 / 4;
         padding-right: 128px;
         position: relative;
+        border-bottom: 1px solid rgba($black, 0.4);
 
         @include xxl {
             padding-right: 30px;

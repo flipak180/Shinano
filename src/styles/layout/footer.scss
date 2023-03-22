@@ -135,6 +135,10 @@
                 right: 0;
                 top: 7px;
             }
+
+            .open &:after {
+                transform: rotate(180deg);
+            }
         }
     }
 
