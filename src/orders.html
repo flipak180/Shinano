@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<include src="./blocks/head.html"></include>
+<body class="page">
+    <include src="./blocks/gamecattt.html"></include>
+    <div class="wrapper">
+        <include src="./blocks/header.html"></include>
+        <main class="content">
+            <section class="section">
+                <div class="container">
+                    <include src="./blocks/breadcrumbs.html"></include>
+                    <h2 class="title section__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+                    <div class="profile aside-content inverted">
+                        <aside>
+                            <div class="box no-padding">
+                                <nav class="profile-nav">
+                                    <ul>
+                                        <li class="active"><a href=""><img src="./images/icon-profile.svg" alt=""> Профиль</a></li>
+                                        <li><a href=""><img src="./images/icon-list.svg" alt=""> Мои заказы</a></li>
+                                        <li><a href=""><img src="./images/icon-logout.svg" alt=""> Выйти</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </aside>
+                        <div class="orders">
+                            <div class="orders__item">
+                                <div class="orders__info">
+                                    <div>
+                                        <span class="orders__title">Заказ № 5 от 21.10.2022 в 17:32</span>
+                                        <span class="orders__status orders__status-waiting">Ожидает проверки</span>
+                                    </div>
+                                    <div>
+                                        <span class="orders__total">Сумма заказа: 620 000 ₽</span>
+                                        <div>
+                                            <span class="orders__print">
+                                                <img src="./images/icon-print.svg" alt="">
+                                                <a href="">Распечатать счет</a>
+                                            </span>
+                                            <button class="orders__opener"><img src="./images/icon-arrow10.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders__content">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr>
+                                                <th>№</th>
+                                                <th>Наименование</th>
+                                                <th>Артикул</th>
+                                                <th>Цена</th>
+                                                <th>Количество</th>
+                                                <th>Сумма</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Shinano SI-1490 BSR ударный</td>
+                                                <td>165165103</td>
+                                                <td>20 624 ₽</td>
+                                                <td>10 шт.</td>
+                                                <td>206 240 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Shinano SI-1490 BSR ударный</td>
+                                                <td>165165103</td>
+                                                <td>20 624 ₽</td>
+                                                <td>10 шт.</td>
+                                                <td>206 240 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Shinano SI-1490 BSR ударный</td>
+                                                <td>165165103</td>
+                                                <td>20 624 ₽</td>
+                                                <td>10 шт.</td>
+                                                <td>206 240 ₽</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orders__item">
+                                <div class="orders__info">
+                                    <div>
+                                        <span class="orders__title">Заказ № 5 от 21.10.2022 в 17:32</span>
+                                        <span class="orders__status orders__status-cancelled">Отменен</span>
+                                    </div>
+                                    <div>
+                                        <span class="orders__total">Сумма заказа: 620 000 ₽</span>
+                                        <div>
+                                            <span class="orders__print">
+                                                <img src="./images/icon-print.svg" alt="">
+                                                <a href="">Распечатать счет</a>
+                                            </span>
+                                            <button class="orders__opener"><img src="./images/icon-arrow10.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders__content">
+                                    <!-- -->
+                                </div>
+                            </div>
+                            <div class="orders__item">
+                                <div class="orders__info">
+                                    <div>
+                                        <span class="orders__title">Заказ № 5 от 21.10.2022 в 17:32</span>
+                                        <span class="orders__status orders__status-done">Выполнено</span>
+                                    </div>
+                                    <div>
+                                        <span class="orders__total">Сумма заказа: 620 000 ₽</span>
+                                        <div>
+                                            <span class="orders__print">
+                                                <img src="./images/icon-print.svg" alt="">
+                                                <a href="">Распечатать счет</a>
+                                            </span>
+                                            <button class="orders__opener"><img src="./images/icon-arrow10.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders__content">
+                                    <!-- -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <include src="./blocks/feedback-form.html"></include>
+        </main>
+        <div class="overlay"></div>
+        <include src="./blocks/footer.html"></include>
+    </div>
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>

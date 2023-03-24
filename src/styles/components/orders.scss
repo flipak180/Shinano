@@ -1,0 +1,112 @@
+.orders {
+
+    &__item {
+        border-bottom: 1px solid rgba($black, 0.4);
+        padding: 24px 0;
+    }
+
+    &__info {
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+
+        @include xl {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        div {
+            display: flex;
+            gap: 32px;
+
+            @include xl {
+                justify-content: space-between;
+            }
+
+            @include md {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+            }
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $blue;
+            font-weight: normal;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__title {
+        min-width: 311px;
+    }
+
+    &__status {
+        position: relative;
+        padding-left: 25px;
+
+        &:before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: #1a499a;
+            display: block;
+            position: absolute;
+            top: 6px;
+            left: 0;
+        }
+
+        &-waiting {
+            color: $blue;
+
+            &:before {
+                background-color: $blue;
+            }
+        }
+
+        &-cancelled {
+            color: $red;
+
+            &:before {
+                background-color: $red;
+            }
+        }
+
+        &-done {
+            color: $green;
+
+            &:before {
+                background-color: $green;
+            }
+        }
+    }
+
+    &__opener {
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        .open & {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__content {
+        display: none;
+        padding-top: 24px;
+
+        .open & {
+            display: block;
+        }
+    }
+}

@@ -272,3 +272,7 @@ $('input[name="delivery"]').change(function() {
     $('.delivery-details').removeClass('visible');
     $('.delivery-details[data-id="' + $(this).attr('id') + '"]').addClass('visible');
 });
+
+$('.orders__opener').click(function() {
+    $(this).closest('.orders__item').toggleClass('open');
+})
