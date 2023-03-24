@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<include src="./blocks/head.html"></include>
+<body class="page">
+    <include src="./blocks/gamecattt.html"></include>
+    <div class="wrapper">
+        <include src="./blocks/header.html"></include>
+        <main class="content">
+            <section class="section">
+                <div class="container">
+                    <include src="./blocks/breadcrumbs.html"></include>
+                    <h2 class="title section__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+                    <div class="profile aside-content inverted">
+                        <aside>
+                            <div class="box no-padding">
+                                <nav class="profile-nav">
+                                    <ul>
+                                        <li class="active"><a href=""><img src="./images/icon-profile.svg" alt=""> Профиль</a></li>
+                                        <li><a href=""><img src="./images/icon-list.svg" alt=""> Мои заказы</a></li>
+                                        <li><a href=""><img src="./images/icon-logout.svg" alt=""> Выйти</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </aside>
+                        <form action="" class="form form-bordered" style="max-width: 532px;">
+                            <div class="form__row">
+                                <input type="email" placeholder="Email" required value="Example@mail.ru" readonly>
+                            </div>
+                            <div class="form__row">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <div class="form__row">
+                                <input type="text" placeholder="Имя" required>
+                            </div>
+                            <div class="form__row">
+                                <input type="text" placeholder="Фамилия">
+                            </div>
+                            <div class="form__row">
+                                <input type="text" placeholder="Отчество">
+                            </div>
+                            <div class="form__row">
+                                <input type="tel" placeholder="Телефон" required>
+                            </div>
+                            <div class="form__row">
+                                <input type="text" placeholder="Компания">
+                            </div>
+                            <div class="form__row">
+                                <input type="text" placeholder="Дополнительная информация">
+                            </div>
+                            <button type="submit" class="btn pull-right mt-2">ИЗМЕНИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <include src="./blocks/feedback-form.html"></include>
+        </main>
+        <div class="overlay"></div>
+        <include src="./blocks/footer.html"></include>
+    </div>
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>

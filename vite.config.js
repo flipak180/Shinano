@@ -18,6 +18,7 @@ export default {
                 purchase: resolve('src/purchase.html'),
                 success: resolve('src/success.html'),
                 inner: resolve('src/inner.html'),
+                profile: resolve('src/profile.html'),
             },
         },
     },
