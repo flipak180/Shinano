@@ -19,6 +19,7 @@ export default {
                 success: resolve('src/success.html'),
                 inner: resolve('src/inner.html'),
                 profile: resolve('src/profile.html'),
+                orders: resolve('src/orders.html'),
             },
         },
     },
