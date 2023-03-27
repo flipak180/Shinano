@@ -14,12 +14,28 @@
                 align-items: center;
                 gap: 8px;
                 color: $black;
+
+                .icon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+
+                    &.icon-profile { background-image: url(../images/icon-profile.svg) }
+                    &.icon-list { background-image: url(../images/icon-list.svg) }
+                    &.icon-logout { background-image: url(../images/icon-logout.svg) }
+                }
             }
 
             &.active a,
             a:hover {
                 background-color: $blue;
                 color: #fff;
+
+                .icon {
+                    &.icon-profile { background-image: url(../images/icon-profile2.svg) }
+                    &.icon-list { background-image: url(../images/icon-list2.svg) }
+                    &.icon-logout { background-image: url(../images/icon-logout.svg) }
+                }
             }
         }
     }
