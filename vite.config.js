@@ -1,6 +1,13 @@
 import posthtml from '@vituum/vite-plugin-posthtml'
 import {resolve} from 'path'
 
+const noAttr = () => ({
+    name: "no-attribute",
+    transformIndexHtml(html) {
+        return html.replace(`type="module" crossorigin`, "defer");
+    }
+})
+
 export default {
     root: 'src',
     build: {
@@ -32,5 +39,6 @@ export default {
             },
             options: {}
         }),
+        noAttr(),
     ]
 }
